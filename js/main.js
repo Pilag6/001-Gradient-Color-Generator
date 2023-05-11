@@ -35,10 +35,11 @@ const generateGradient = (isRandom) => {
 const copyGradient = () => {
     navigator.clipboard.writeText(textarea.value);
     copyBtn.innerText = "Gradient Copied";
-    copyBtn.style.background = "#00b7ab51"
-    setTimeout(() => copyBtn.innerText = "Copy Gradient", 1600)
-    setTimeout(() => copyBtn.style.background = "#00b7aa", 1600)
+    copyBtn.style.background = "#00b7ab51";
+    setTimeout(() => (copyBtn.innerText = "Copy Gradient"), 1600);
+    setTimeout(() => (copyBtn.style.background = "#00b7aa"), 1600);
 };
+
 // Add Envent Listener
 
 colorInputs.forEach((input) => {
