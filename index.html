@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title-->
+        <title>Gradient Color Generator</title>
+        <meta name="description" content="Descripción" />
+
+        <!-- Stylesheets CSS-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!------------ Google Font ---------->
+
+        <!----------- Font Awesome ---------->
+        <script
+            src="https://kit.fontawesome.com/4ce5221f73.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <div class="container-gradient">
+
+            <div class="box-gradient">
+
+                <div class="box-sample"></div>
+
+                <div class="first-row">
+
+                    <div class="first-row-left">
+                        <p>Direction</p>
+                        <div class="select-box">
+                            <select>
+                                <option value="to top">Top</option>
+                                <option value="to right top">Right top</option>
+                                <option value="to right">Right</option>
+                                <option value="to right bottom">Right bottom</option>
+                                <option value="to bottom">Bottom</option>
+                                <option value="to left bottom">Left bottom</option>
+                                <option value="to left">Left</option>
+                                <option value="to left top" selected>Left top</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="first-row-rigth">
+
+                        <p>Colors</p>
+                        <div class="colors-sample inputs">
+                            <input type="color" value="#00466d"/>
+                            <input type="color" value="#00B7AA" />
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <textarea class="textarea" disabled>background: linear-gradient(to left top, #051937, #00466d, #007a9e, #00B7AA, #52D298);</textarea>
+
+                <div class="btns">
+                    <button class="refresh">Refresh Colors</button>
+                    <button class="copy">Copy Colors</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- JavaScript-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
