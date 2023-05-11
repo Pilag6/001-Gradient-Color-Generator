@@ -12,12 +12,14 @@ const copyBtn = document.querySelector(".copy");
 
 const getRandomColor = () => {
     // Generate a Random Color in Hexadecimal format. Ex. #542874
-    const randomHex = Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0').toUpperCase();
+    const randomHex = Math.floor(Math.random() * 0xffffff)
+        .toString(16)
+        .padStart(6, "0")
+        .toUpperCase();
     return `#${randomHex}`;
 };
 
 const generateGradient = (isRandom) => {
-
     if (isRandom) {
         colorInputs[0].value = getRandomColor();
         colorInputs[1].value = getRandomColor();
@@ -31,8 +33,12 @@ const generateGradient = (isRandom) => {
 };
 
 const copyGradient = () => {
-    navigator.clipboard.writeText(textarea.value)
-}
+    navigator.clipboard.writeText(textarea.value);
+    copyBtn.innerText = "Gradient Copied";
+    copyBtn.style.background = "#00b7ab51"
+    setTimeout(() => copyBtn.innerText = "Copy Gradient", 1600)
+    setTimeout(() => copyBtn.style.background = "#00b7aa", 1600)
+};
 // Add Envent Listener
 
 colorInputs.forEach((input) => {
@@ -44,4 +50,4 @@ selectBox.addEventListener("change", () => generateGradient(false));
 
 randomBtn.addEventListener("click", () => generateGradient(true));
 
-copyBtn.addEventListener("click", copyGradient)
+copyBtn.addEventListener("click", copyGradient);

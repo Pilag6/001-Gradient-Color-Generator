@@ -130,6 +130,7 @@ body {
 
 .box-gradient .btns .random {
     background: #007a9e;
+    width: 180px;
 }
 
 .box-gradient .btns .random:hover {
@@ -138,6 +139,7 @@ body {
 
 .box-gradient .btns .copy {
     background: #00b7aa;
+    width: 180px;
 }
 
 .box-gradient .btns .copy:hover {
@@ -168,6 +170,11 @@ body {
     .box-gradient .btns {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .box-gradient .btns .random,
+    .box-gradient .btns .copy {
+        width: 100%;
     }
     
 }
