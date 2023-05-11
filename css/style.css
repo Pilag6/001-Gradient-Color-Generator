@@ -125,13 +125,14 @@ body {
     border: none;
     cursor: pointer;
     color: #fff;
+    
 }
 
-.box-gradient .btns .refresh {
+.box-gradient .btns .random {
     background: #007a9e;
 }
 
-.box-gradient .btns .refresh:hover {
+.box-gradient .btns .random:hover {
     background: #007a9ed9;
 }
 
