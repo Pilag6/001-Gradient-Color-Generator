@@ -1,12 +1,12 @@
 // Constants
 
-const containerGradient = document.querySelector(".container-gradient");
-const boxSample = document.querySelector(".box-sample");
+const containerGradient = document.querySelector(".container__gradient");
+const boxSample = document.querySelector(".box__gradient--sample");
 const colorInputs = document.querySelectorAll(".colors-sample input");
 const selectBox = document.querySelector(".select-box select");
 const textarea = document.querySelector(".textarea");
-const randomBtn = document.querySelector(".random");
-const copyBtn = document.querySelector(".copy");
+const randomBtn = document.querySelector(".btns__gradient--random");
+const copyBtn = document.querySelector(".btns__gradient--copy");
 
 // Functions
 
